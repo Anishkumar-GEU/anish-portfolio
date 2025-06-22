@@ -1,0 +1,57 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Anish Kumar</title>
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Anish Kumar</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-section">
+    <section class="intro">
+      <div class="hero-section">
+        <div class="profile-wrapper">
+          <img src="my_image.jpg" alt="Your Name" class="profile-image" />
+        </div>
+      </div>
+
+      <h2>Hello, I'm <span>Anish Kumar</span></h2>
+      <p id="mycareer">Aspiring Software Developer | Web Enthusiast | Student</p>
+      <a href="about.html" class="btn">Know More About Me</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anish Kumar. All Rights Reserved.</p>
+  </footer>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script>
+    $('#mycareer').hide();
+    // $('#mycareer').animate({paddingLeft:'2px'},1000);
+    $('#mycareer').slideDown(500);
+  // Toggle dark mode
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
